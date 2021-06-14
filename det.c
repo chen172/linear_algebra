@@ -112,9 +112,11 @@ g_det(int **A, int size)
 				B[m+1][n] = B[m][n];
 				B[m][n] = tmp;
 			}
+			// 两行互换，需要乘上-1
 			sum = sum*(-1);
 		}
-			
+		
+		// 这里有bug, B[m][m]可能会为0
 		factor = (float)B[i][m]/(float)B[m][m];
 		//printf("factor is %f, %d, %d\n", factor, i, m);
 		
