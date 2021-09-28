@@ -254,7 +254,7 @@ matrix_scal_mul(int **A, int rows, int cols, int scal)
 // A is mxn, B is nxp
 // C is mxp
 int**
-matrix_sub(int **A, int **B, int m, int n, int p)
+matrix_mul(int **A, int **B, int m, int n, int p)
 {
 	int **C = NULL;
 	int sum = 0; 
